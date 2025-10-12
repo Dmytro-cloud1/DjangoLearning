@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import ArticalModel
+from .models import ArticalModel, Aliens
 
 # Create your views here.
 def home(request):
@@ -21,6 +21,10 @@ def products(request):
         'discription':'yellow'
     }]}
     return render(request, 'django_app/index.html', context= context)
+
+def aliens(request):
+    alien = Aliens.objects.all()
+    return render(request, 'django_app/main.html', context= {"aliens": alien})
 
 def baseproducts(request):
     products = ArticalModel.objects.all()

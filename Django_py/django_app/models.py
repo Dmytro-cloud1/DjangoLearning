@@ -9,3 +9,7 @@ class ArticalModel(models.Model):
     def __str__(self):
         return self.title
     
+class Aliens(models.Model):
+    name = models.CharField(max_length=150, verbose_name= 'Name')
+    age = models.IntegerField(verbose_name= 'Age')
+    address = models.CharField(max_length= 200, verbose_name= "Address")

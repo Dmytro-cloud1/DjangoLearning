@@ -1,0 +1,19 @@
+.my-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    border: 1px solid black;
+    padding: 300px;
+}
+
+.alien-name {
+    display: block;
+}
+
+.alien-address{
+    display: block;
+}
+
+.alen-age{
+    display: block;
+}
