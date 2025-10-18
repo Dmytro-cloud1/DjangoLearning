@@ -1,19 +1,27 @@
-.my-div {
+.main-div{
     display: flex;
-    justify-content: space-between;
-    align-items: center; 
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.my-div {
     border: 1px solid black;
-    padding: 300px;
+    width: 400px;
+    padding: 10px;
 }
 
 .alien-name {
     display: block;
+    text-align: center;
 }
 
 .alien-address{
     display: block;
+    text-align: right;
 }
 
-.alen-age{
+.alien-age{
     display: block;
+    text-align: right;
 }

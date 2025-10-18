@@ -1,6 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import ArticalModel, Aliens
+from django.views.generic import ListView
+
+
 
 # Create your views here.
 def home(request):
@@ -29,3 +32,15 @@ def aliens(request):
 def baseproducts(request):
     products = ArticalModel.objects.all()
     return render(request, 'django_app/products.html', context={"products":products})
+
+
+class AlienViews(ListView):
+    model = Aliens
+    template_name = 'django_app/alienview.html'
+    context_object_name = 'aliens'
+    queryset = Aliens.objects.filter(age__range = (103, 170))
+
+class Artical(ListView):
+    model = ArticalModel
+    template_name = 'django_app/products.html'
+    context_object_name = "products"

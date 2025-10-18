@@ -10,5 +10,7 @@ urlpatterns = [
     path('abc/', views.home, name= 'abc'),
     path("products/", views.products, name='products'),
     path('baseproducts/', views.baseproducts, name= 'baseproducts'),
-    path('aliens', views.aliens, name= "Aliens")
+    path('aliens', views.aliens, name= "Aliens"),
+    path('view/', views.AlienViews.as_view(), name= "Views"),
+    path('artical/', views.Artical.as_view(), name= "Artical")
 ]

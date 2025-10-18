@@ -12,3 +12,4 @@ class Alien_admin(admin.ModelAdmin):
     list_display = ['name', 'address']
     list_filter = ['name']
     search_fields = ['name','age']
+    
