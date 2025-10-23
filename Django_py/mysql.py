@@ -34,7 +34,7 @@ SKIP_TABLES = [
 for table_name, table in metadata.tables.items():
     if table_name in SKIP_TABLES:
         continue
-
+#------------------------------------------------------------------------------------------------------------
     rows = sqlite_session.query(table).all()
     if not rows:
         continue
