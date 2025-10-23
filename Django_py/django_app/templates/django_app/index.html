@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-{%for product in products%}
 
-<div>
-Title:<b>{{product.title}}</b><br>
-Cost:<b>{{product.cost}}</b><br>
-Discription:<b>{{product.discription}}</b>
-</div><br><br>
-{%endfor%}
+<body>
+    <a href="{%url 'Aliens'%}">Link</a>
+    {%for product in products%}
+
+    <div>
+        Title:<b>{{product.title}}</b><br>
+        Cost:<b>{{product.cost}}</b><br>
+        Discription:<b>{{product.discription}}</b>
+    </div><br><br>
+    {%endfor%}
 
 </body>
+
 </html>

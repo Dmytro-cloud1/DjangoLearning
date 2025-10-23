@@ -38,7 +38,7 @@ class AlienViews(ListView):
     model = Aliens
     template_name = 'django_app/alienview.html'
     context_object_name = 'aliens'
-    queryset = Aliens.objects.filter(age__range = (103, 170))
+    queryset = Aliens.objects.filter(age__range = (1000, 2000))
 
 class Artical(ListView):
     model = ArticalModel
